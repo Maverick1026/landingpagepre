@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./css/style.css">
 
 </head>
-<body style="background-image: url('/landing-page-banner/coffeebg.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+<body >
     
     <!-- header -->
     <header class="header">
@@ -158,7 +158,7 @@
             <h3>Menu</h3>
         </div>
 
-        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" style="box-shadow: 3px 5px 6px black;">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" style="box-shadow: 3px 5px 6px black;" data-bs-interval="2000">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="/landing-page-banner/carbonara.png" class="d-block w-100" alt="Image 1">
@@ -281,13 +281,13 @@
             <!-- <img src="./img/heading-img.png" alt="heading"> -->
             <h3>Services offered</h3>
         </div>
-        <div class="box-container">
-            <div class="box">
+        <div class="services-card-container">
+            <div class="services-card">
                 <img src="./img/coffee-cup.png" alt="icon">
                 <h3>Rent the place</h3>
                 <p>Rent the place for a day or more and enjoy your day.</p>
             </div>
-            <div class="box">
+            <div class="services-card">
                 <img src="./img/canvas.png" alt="icon">
                 <h3>Painting Workshop</h3>
                 <p>Create beautiful art and express your creativity in our painting workshop.</p>
@@ -440,26 +440,33 @@
     <!-- footer -->
     <section class="footer">
         <div class="box-container">
-            <div class="box">
+            <div class="card">
                 <h3>Opening Hours</h3>
-                <p style="font-weight: bold; font-size: 2em;">Opens Daily</p>
+                <p class="opening-hours">Opens Daily</p>
                 <p>02:00pm to 10:00pm</p>
-                <p style="font-weight: bold; font-size: 2em;">EXCEPT ON MONDAYS</p>
+                <p class="opening-hours">EXCEPT ON MONDAYS</p>
             </div>
-            <div class="box">
+            <div class="card">
                 <h3>Shop Location</h3>
                 <p>Larena St., South Poblacion Valencia Negros Oriental 6215</p>
-                
             </div>
-            <div class="box">
+            <div class="card">
                 <h3>Our Number</h3>
                 <p>+63 929 099 5773</p>
                 <p>+63 906 288 0939</p>
             </div>
+            <div class="box">
+                <h3>Follow Us</h3>
+                <a style="background-color: white;" href="#!" onclick="redirectToFacebook()">
+                    <img src="/landing-page-banner/fbicon.png" alt="Follow Us Image" style="width: 40px; height: 40px;">
+                </a>
+                <a style="background-color: white;" href="#!">
+                    <img src="/landing-page-banner/instaicon.png" alt="Follow Us Image" style="width: 40px; height: 40px;">
+                </a>
+            </div>
         </div>
-
+    
         <div class="credit">&copy; copyright @ 2023 by <span>Summerhouse</span> | all rights reserved!</div>
-
     </section>
 
     <script src="./js/script.js"></script>

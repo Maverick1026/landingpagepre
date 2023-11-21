@@ -101,3 +101,8 @@ contactLink.addEventListener('click', (event) => {
     event.preventDefault();
     scrollToSection('#contact', 60); // Adjust the offset as needed
 });
+
+function redirectToFacebook() {
+    // Replace the URL below with the actual URL you want to redirect to
+    window.location.href = 'https://www.facebook.com/profile.php?id=100086005815983&mibextid=ZbWKwL';
+}
