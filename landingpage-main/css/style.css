@@ -19,6 +19,9 @@
     text-decoration: none;
     /* text-transform: capitalize; */
 }
+body {
+    font-size: 1.6rem; /* Adjust the base font size as needed */
+}
 
 *::selection {
     background-color: var(--main-color);
@@ -236,7 +239,7 @@ section {
 
 .home-bg .home .content p {
     padding: 1rem 0;
-    font-size: 1.6rem;
+    font-size: 1.2em;
     color: var(--black);
     line-height: 2;
     width: 100%; /* Make these elements take full width */
@@ -345,7 +348,7 @@ section {
 
 .services-card p {
     line-height: 1.6;
-    font-size: 1.2em;
+    font-size: 1.6rem;
 }
 .about {
     display: flex;
@@ -377,7 +380,7 @@ section {
     padding: 1rem 0;
     line-height: 2;
     color: var(--light-color);
-    font-size: 1.5rem;
+    font-size: 1.6rem;
 }
 
 .google-maps {
@@ -579,6 +582,92 @@ p {
 .opening-hours {
     font-weight: bold;
     font-size: 1.2em;
+}
+
+@media (max-width: 1440px) {
+    .home-bg .home {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5rem;
+    }
+
+    .home-bg .home .content {
+        margin-top: 35rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    #carouselAd {
+        margin-top: 15rem;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .navbar-nav {
+        text-align: center;
+        margin-right: 0;
+    }
+
+    .navbar-nav .nav-item {
+        display: block;
+        margin: 0;
+    }
+
+    .navbar-nav .nav-link {
+        margin: 0.5rem 0;
+    }
+
+    .navbar-toggler {
+        padding: 10px;
+    }
+
+    .dropdown-menu {
+        text-align: center;
+    }
+
+    .dropdown-menu a {
+        font-size: 2rem;
+        color: #FFF2E4;
+        display: block;
+        padding: 0.5rem;
+    }
+
+    .header .navbar .flex {
+        display: block;
+        text-align: center;
+    }
+
+    .header .navbar .flex .navbar-brand img {
+        max-height: 12rem;
+        margin: 0;
+    }
+
+    .header .navbar .flex .navbar-nav .nav-item {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    .header .navbar .flex .navbar-nav .nav-link {
+        margin: 0;
+    }
+    .about .content {
+        text-align: center;
+    }
+    .footer .box-container {
+        grid-template-columns: 1fr; /* Change to a single column layout */
+        justify-content: center; /* Center the items horizontally */
+        text-align: center; /* Center the text within the cards */
+    }
+
+    .footer .card {
+        margin: 0 auto; /* Center the cards horizontally */
+        text-align: center; /* Center the text within the cards */
+        margin-bottom: 20px; /* Add space between the cards */
+    }
+
+    .footer .box {
+        margin-top: 20px; /* Add space between the cards and the social media icons */
+    }
 }
 
 @media (max-width: 991px) {
