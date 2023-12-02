@@ -218,10 +218,12 @@ section {
 .home-bg .home .content {
     width: 50rem;
     text-align: center;
-    margin: -10rem; /* Center the content horizontally */
+    margin: 0 auto; /* Center the content horizontally */
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    z-index: 1;
 }
 .summer-text {
     color: #fe9001;
@@ -233,8 +235,7 @@ section {
     color: var(--black);
     font-family: 'Poppins', cursive;
     white-space: nowrap;
-    margin-right: 6rem;
-    margin-top: -25rem;
+    margin-top: 0; /* Adjusted to center vertically */
 }
 
 .home-bg .home .content p {
@@ -243,23 +244,29 @@ section {
     color: var(--black);
     line-height: 2;
     width: 100%; /* Make these elements take full width */
+    margin-bottom: 2rem; /* Add some bottom margin */
 }
 #carouselAd {
     position: relative;
-    height: 60vh;
-    width: 40vw;
+    height: 90vh;
+    width: 80vw;
     overflow: hidden;
-    margin-top: 0;
-    margin-left: 20rem;
+    margin: 0 auto; /* Center the carousel horizontally */
+    margin-top: -16rem;
+    /* margin-left: 20rem; Remove this line as it may offset the carousel */
   }
 
   .carousel-inner {
     height: 90%;
-    width: auto;
+    width: 100%; /* Set the width of the carousel-inner to 100% */
+    display: flex; /* Use flexbox to center items horizontally */
+    align-items: center; /* Center items vertically */
   }
 
   .carousel-item {
-    height: 90%;
+    height: 100%;
+    width: 100%; /* Set the width of the carousel item to 100% */
+    text-align: center;
   }
 
   /*.carousel-item img {
@@ -274,13 +281,13 @@ section {
 }
 #carouselAd .carousel-inner .carousel-item {
     width: 100%; /* Set the width of the carousel item */
-    height: 200px; /* Set the height of the carousel item */
+    height: 500px; /* Set the height of the carousel item */
 }
 
 #carouselAd .carousel-inner .carousel-background img {
-    width: 90%; /* Set the width of the image inside the carousel item */
-    height: 70%; /* Set the height of the image inside the carousel item */
-    object-fit: cover; /* This property ensures that the image covers the entire container */
+    width: 100%; /* Set the width of the image to 100% */
+    height: 100%; /* Set the height of the image to 100% */
+    object-fit: cover; /* This property ensures that the image covers the entire container, stretching if necessary */
 }
 .carousel-inner {
     width: 100%;
