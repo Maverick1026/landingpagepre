@@ -566,15 +566,13 @@ section {
 .footer .credit span {
     color: var(--main-color);
 }
+
 .card {
+    height: 200px; /* Set a fixed height for all card containers */
     border: 1px solid #ccc;
     border-radius: 10px;
     padding: 20px;
-    margin-top: 20px;
-    margin-right: 10px;
-    margin-bottom: 20px;
-    margin-left: 10px;
-    width: 250px;
+    margin: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
