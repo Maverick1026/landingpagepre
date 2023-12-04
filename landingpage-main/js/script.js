@@ -45,38 +45,42 @@ const headerHeight = document.querySelector('.header').offsetHeight;
 
 // Function to handle smooth scrolling with an optional offset
 function scrollToSection(sectionId, offset = 0) {
+    const targetSection = document.querySelector(sectionId);
+    const targetOffset = targetSection.offsetTop - headerHeight + offset;
+
+    console.log("Target Section Offset:", targetOffset);
+
     window.scrollTo({
-        top: document.querySelector(sectionId).offsetTop - headerHeight + offset,
+        top: targetOffset,
         behavior: 'smooth',
     });
 }
-
 // Add a click event listener to the "Home" link
 homeLink.addEventListener('click', (event) => {
     event.preventDefault();
-    scrollToSection('#home', -1000);
+    scrollToSection('#home', -1300);
 });
 
 // Add a click event listener to the "About Us" link within the home section
 aboutLinkHome.addEventListener('click', (event) => {
     event.preventDefault();
-    scrollToSection('#about', 20); // Adjust the offset as needed
+    scrollToSection('#about', 200); // Adjust the offset as needed
 });
 
 aboutLink.addEventListener('click', (event) => {
     event.preventDefault();
-    scrollToSection('#about', 20); // Adjust the offset as needed
+    scrollToSection('#about', 80); // Adjust the offset as needed
 });
 
 // Add a click event listener to the "Menu" link
 menuLink.addEventListener('click', (event) => {
     event.preventDefault();
-    scrollToSection('#menu', 30); // Adjust the offset as needed
+    scrollToSection('#menu', 50); // Adjust the offset as needed
 });
 
 menuLinkMenu.addEventListener('click', (event) => {
     event.preventDefault();
-    scrollToSection('#menu', 30); // Adjust the offset as needed
+    scrollToSection('#menu', 50); // Adjust the offset as needed
 });
 
 // Add a click event listener to the "Gallery" link
