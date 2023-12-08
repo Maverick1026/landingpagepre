@@ -220,15 +220,27 @@ section {
     cursor: pointer;
 }
 
-
+.home{
+    margin: 5rem;
+}
 .home-bg {
-    min-height: calc(90rem - var(--header-height)); /* Adjust the header height variable */
-    background: linear-gradient(90deg, var(--white), transparent 100%), url(../img/home-bg.png) no-repeat;
+    min-height: calc(90rem - var(--header-height));
+    background: linear-gradient(100deg, var(--white), transparent 170%),url(../img/home-bg.png) no-repeat;
     background-size: cover;
     background-position: center;
     margin-bottom: 2rem;
-    padding-bottom: 0; /* Remove bottom padding */
+    padding-bottom: 0;
     margin-top: 8rem;
+}
+.home .container {
+    display: flex;
+    justify-content: space-between;
+    margin-right: auto; /* Add margin-right:auto to move it to the left */
+    margin-left: 0;    /* Reset margin-left to 0 */
+}
+
+.home .col-md-6 {
+    flex: 0 0 50%; /* Adjusted width for responsiveness */
 }
 
 .home-bg .home {
@@ -237,85 +249,95 @@ section {
     align-items: center;
 }
 
-.home-bg .home .content {
-    width: 50rem;
-    text-align: center;
-    margin: 0 auto; /* Center the content horizontally */
+.home .content {
+    width: 100%;
+    text-align: left;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     position: relative;
     z-index: 1;
+    margin-left: 20%; /* Adjust the left margin as needed */
+    margin-top: 20%;
+}
+.home-content-column {
+    margin-right: 10rem; /* Adjust the margin as needed */
 }
 .summer-text {
     color: #fe9001;
     font-family: 'Poppins', cursive;
 }
 
-.home-bg .home .content h3 {
-    font-size: 6rem;
+.home .content h3 {
+    font-size: 5rem;
     color: var(--black);
     font-family: 'Poppins', cursive;
     white-space: nowrap;
-    margin-top: 0; /* Adjusted to center vertically */
+    margin-top: 0;
 }
 
-.home-bg .home .content p {
+.home .content p {
     padding: 1rem 0;
-    font-size: 1.2em;
+    font-size: 1.8rem;
     color: var(--black);
     line-height: 2;
-    width: 100%; /* Make these elements take full width */
-    margin-bottom: 2rem; /* Add some bottom margin */
+    width: 100%;
+    margin-bottom: 2rem;
 }
+
 #carouselAd {
     position: relative;
     height: 90vh;
-    width: 80vw;
+    width: 100%; /* Adjusted width for responsiveness */
     overflow: hidden;
-    margin: 0 auto; /* Center the carousel horizontally */
-    margin-top: -9rem;
-    /* margin-left: 20rem; Remove this line as it may offset the carousel */
-  }
-
-  .carousel-inner {
+    margin: 0 auto;
+    margin-top: -51%;
+    margin-left: 63%;
+}
+.carousel-background{
+    width: 80%;
+}
+#carouselAd .carousel-inner {
     height: 100%;
-    width: 100%; /* Set the width of the carousel-inner to 100% */
-    display: flex; /* Use flexbox to center items horizontally */
-    align-items: center; /* Center items vertically */
-  }
-
-  .carousel-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 9rem;
+}
+ 
+#carouselAd .carousel-item {
     height: 100%;
-    width: 100%; /* Set the width of the carousel item to 100% */
+    width: 100%;
     text-align: center;
-  }
+}
 
   /*.carousel-item img {
     object-fit: cover;
     height: 90%;
     width: 90%;
   } */
-  .carousel-image {
+  #carouselAd .carousel-image {
     object-fit: cover;
-    width: 700px;
-    height: 800px;
+    width: 100%;
+    height: 100%;
 }
+
 #carouselAd .carousel-inner .carousel-item {
-    width: 100%; /* Set the width of the carousel item */
-    height: 500px; /* Set the height of the carousel item */
+    width: 100%;
+    height: 100%;
 }
 
 #carouselAd .carousel-inner .carousel-background img {
-    width: 100%; /* Set the width of the image to 100% */
-    height: 100%; /* Set the height of the image to 100% */
-    object-fit: cover; /* This property ensures that the image covers the entire container, stretching if necessary */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .carousel-inner {
     width: 100%;
 }
 .carousel-slide{
-    margin-right: 5rem;
+    margin-right: 1rem;
 }
 
 .best-seller {
@@ -359,9 +381,10 @@ section {
     border: 1px solid #ccc;
     border-radius: 10px;
     padding: 20px;
-    width: 300px;
+    width: 1700px;
+    height: 700px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center; /* Center the text within the cards */
+    text-align: left; /* Center the text within the cards */
 }
 
 .services-card img {
@@ -377,7 +400,7 @@ section {
 
 .services-card p {
     line-height: 1.6;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
 }
 .about {
     display: flex;
@@ -409,9 +432,11 @@ section {
     padding: 1rem 0;
     line-height: 2;
     color: var(--light-color);
-    font-size: 1.6rem;
+    font-size: 1.8rem;
 }
-
+.row{
+    display: flex;
+}
 .google-maps {
     display: flex;
     justify-content: center;
@@ -419,8 +444,16 @@ section {
     height: 400px; /* Adjust the height as needed */
     margin: 20px 0; /* Add margin for spacing */
     margin-bottom: 20rem;
+    flex: 1; /* Takes up remaining space */
+    margin-right: 20px; /* Adjust margin as needed */
 }
-
+.row .box-container{
+    flex: 1; /* Takes up remaining space */
+    padding-bottom: 33rem;
+}
+.row .container {
+    margin-bottom: 20px; /* Adjust margin between containers */
+}
 .facility .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
@@ -474,6 +507,15 @@ section {
     color: var(--black);
 }
 
+#galleryCarousel .carousel-item {
+    height: 1000px; /* Set the desired height for your images */
+}
+
+#galleryCarousel .carousel-image {
+    height: 100%; /* Make the images fill the entire height of the carousel item */
+    width: auto; /* Maintain the aspect ratio of the images */
+    margin: 0 auto; /* Center the images horizontally */
+}
 .gallery .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, 33rem);
@@ -527,6 +569,7 @@ section {
 .blog .blog-post a.btn:hover {
     background-color: #0056b3;
 }
+
 .contact {
     margin-top: 30px; /* Adjust the margin as needed */
 }

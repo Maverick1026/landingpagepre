@@ -18,7 +18,7 @@
     <header class="header">
             <nav class="navbar navbar-expand-lg flex" style="background-color: #141436"> <!-- Add the flex class here -->
                     <a class="navbar-brand" href="#home">
-                         <img src="./img/logo.png" alt="logo" style="max-width: 95px; height: auto;">
+                         <img src="./img/logo.png" alt="logo" style="max-width: 150px; height: auto;">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -80,73 +80,42 @@
     <!-- home -->
     <div class="home-bg">
         <section class="home" id="home">
-            <div class="content">
-                <h3>The <span class="summer-text">Summer</span>house Cafe</h3>
-                <p>Where coffee brings people together and memories are made.</p>
-                <p>Welcome to the Tiny Summerhouse Cafe! We believe in the power of a great cup of coffee to bring people together. Our cafe is more than just a place to grab your favorite brew. It's a community hub where stories are shared, friendships are forged, and moments are savored.</p> 
-            </div>
-            <div class="content">
-                <div>
-                <section id="carouselAd" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
-                    <div class="carousel-inner">
-                      <div class="carousel-item active" >
-                        <div class="carousel-background">
-                          <img src="./img/pork sinuso1.png" class="d-block w-100" alt="Carousel Ad 1">
+            <div class="container">
+                <div class="row">
+                    <!-- Column for Home Content -->
+                    <div class="col-md-6">
+                        <div class="content">
+                            <h3>The <span class="summer-text">Summer</span>house Cafe</h3>
+                            <p>Where coffee brings people together and memories are made.</p>
+                            <p>Welcome to the Tiny Summerhouse Cafe! We believe in the power of a great cup of coffee to bring people together. Our cafe is more than just a place to grab your favorite brew. It's a community hub where stories are shared, friendships are forged, and moments are savored.</p>
                         </div>
-                      </div>
-                      <div class="carousel-item" >
-                        <div class="carousel-background">
-                          <img src="./img/Crab _ mango salad.png" class="d-block w-100" alt="Carousel Ad 2">
-                        </div>
-                      </div>
-                      <div class="carousel-item">
-                        <div class="carousel-background">
-                          <img src="./img/carbonara1.png" class="d-block w-100" alt="Carousel Ad 3">
-                        </div>
-                      </div>
                     </div>
-                  </section>
+    
+                    <!-- Column for Carousel Ad -->
+                    <div class="col-md-61">
+                        <section id="carouselAd" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="carousel-background">
+                                        <img src="./img/pork sinuso1.png" class="d-block w-100" alt="Carousel Ad 1">
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="carousel-background">
+                                        <img src="./img/Crab _ mango salad.png" class="d-block w-100" alt="Carousel Ad 2">
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="carousel-background">
+                                        <img src="./img/carbonara1.png" class="d-block w-100" alt="Carousel Ad 3">
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
             </div>
         </section>
-
-     
-
-        <!-- <section class="best-seller" id="best-seller">
-            <div class="heading">
-                <h3>Best Seller</h3>
-            </div>
-        
-            <div class="best-seller-item">
-                <img src="./img/C&MSalad.png" alt="Best Seller Item" style="width: 500px; height: 450px;">
-                <div class="content">
-                    <h3>Crab and Mango Salad</h3>
-                    <h4 class="display-6">Php 155</h4>
-                    <p>
-                        With our fresh and succulent crab meat, perfectly combined with the sweetness of ripe, luscious mango, you'll be transported to a world of exquisite flavor. This salad is a perfect blend of textures and flavors that will thrill your taste buds.
-                    </p>
-                </div>
-            </div> -->
-            <!-- <div class="best-seller-item">
-                <div class="content">
-                    <h3>Carbonara</h3>
-                    <h4 class="display-6">Php 135</h4>
-                    <p>
-                        A dish full of rich and creamy pasta like no other. Every bite is a decadent symphony of flavors and textures.
-                    </p>
-                </div>
-                <img src="./img/carbonarapic.png" alt="Best Seller Item" style="width: 500px; height: 450px;">
-            </div>
-            <div class="best-seller-item">
-                <img src="./img/pork sinusopic.png" alt="Best Seller Item" style="width: 500px; height: 450px;">
-                <div class="content">
-                    <h3>Pork Sinuso</h3>
-                    <h4 class="display-6">Php 135</h4>
-                    <p>
-                        It's a dish that celebrates the bold flavors of Filipino Cuisine, featuring succulent pork marinated in a zesty blend of spice, cooked to perfection and topped with a fiery chili sauce.
-                    </p>
-                </div>
-            </div>
-        </section> -->
     </div>
 
 
@@ -285,8 +254,6 @@
                 <img src="./img/coffee-cup.png" alt="icon">
                 <h3>Rent the place</h3>
                 <p>Rent the place for a day or more and enjoy your day.</p>
-            </div>
-            <div class="services-card">
                 <img src="./img/canvas.png" alt="icon">
                 <h3>Painting Workshop</h3>
                 <p>Create beautiful art and express your creativity in our painting workshop.</p>
@@ -417,7 +384,7 @@
         </div>
 
         <div class="row">
-            <div class="google-maps" >
+            <div class="google-maps">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d477.45895394978163!2d123.24493111124609!3d9.2804865832093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33ab6781efe165eb%3A0x8016aad02ad83de3!2sThe%20SUMMERHOUSE%20Cafe!5e1!3m2!1sen!2sph!4v1699082445928!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <!-- <div class="image">
@@ -432,40 +399,47 @@
                 <textarea name="message" required class="box" placeholder="Any additional message or requirements"></textarea>
                 <input type="submit" name="send" value="Send Workshop Join Request" class="btn">
             </form> -->
-
+            <div class="box-container">
+                <div class="container">
+                    <h3>Opening Hours</h3>
+                    <div class="content">
+                        <p class="opening-hours">Opens Daily</p>
+                        <p>02:00pm to 10:00pm</p>
+                        <p class="opening-hours">EXCEPT ON MONDAYS</p>
+                    </div>
+                </div>
+        
+                <div class="container">
+                    <h3>Shop Location</h3>
+                    <div class="content">
+                        <p>Larena St., South Poblacion Valencia Negros Oriental 6215</p>
+                    </div>
+                </div>
+        
+                <div class="container">
+                    <h3>Our Number</h3>
+                    <div class="content">
+                        <p>+63 929 099 5773</p>
+                        <p>+63 906 288 0939</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- footer -->
     <section class="footer">
-        <div class="box-container">
-            <div class="card">
-                <h3>Opening Hours</h3>
-                <p class="opening-hours">Opens Daily</p>
-                <p>02:00pm to 10:00pm</p>
-                <p class="opening-hours">EXCEPT ON MONDAYS</p>
-            </div>
-            <div class="card">
-                <h3>Shop Location</h3>
-                <p>Larena St., South Poblacion Valencia Negros Oriental 6215</p>
-            </div>
-            <div class="card">
-                <h3>Our Number</h3>
-                <p>+63 929 099 5773</p>
-                <p>+63 906 288 0939</p>
-            </div>
-            <div class="box">
-                <h3>Follow Us</h3>
-                <a style="background-color: white;" href="https://www.facebook.com/profile.php?id=100086005815983&mibextid=ZbWKwL" target="_blank">
-                    <img src="./landing-page-banner/fbicon.png" alt="Follow Us Image" style="width: 40px; height: 40px;">
-                </a>
-                <a style="background-color: white;" href="#!">
-                    <img src="./landing-page-banner/instaicon.png" alt="Follow Us Image" style="width: 40px; height: 40px;">
-                </a>
-            </div>
-        </div>
-    
+
         <div class="credit">&copy; copyright @ 2023 by <span>Summerhouse</span> | all rights reserved!</div>
+        <div class="box">
+                    <h3>Follow Us</h3>
+                    <a style="background-color: white;" href="https://www.facebook.com/profile.php?id=100086005815983&mibextid=ZbWKwL" target="_blank">
+                        <img src="./landing-page-banner/fbicon.png" alt="Follow Us Image" style="width: 40px; height: 40px;">
+                    </a>
+                    <a style="background-color: white;" href="#!">
+                        <img src="./landing-page-banner/instaicon.png" alt="Follow Us Image" style="width: 40px; height: 40px;">
+                    </a>
+                </div>
     </section>
 
     <script src="./js/script.js"></script>
