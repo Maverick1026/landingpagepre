@@ -292,7 +292,7 @@ section {
     width: 100%; /* Adjusted width for responsiveness */
     overflow: hidden;
     margin: 0 auto;
-    margin-top: -51%;
+    margin-top: -49%;
     margin-left: 63%;
 }
 .carousel-background{
@@ -508,7 +508,7 @@ section {
 }
 
 #galleryCarousel .carousel-item {
-    height: 1000px; /* Set the desired height for your images */
+    height: 600px; /* Set the desired height for your images */
 }
 
 #galleryCarousel .carousel-image {
