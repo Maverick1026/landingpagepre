@@ -292,11 +292,11 @@ section {
     width: 100%; /* Adjusted width for responsiveness */
     overflow: hidden;
     margin: 0 auto;
-    margin-top: -51%;
+    margin-top: -45%;
     margin-left: 63%;
 }
 .carousel-background{
-    width: 80%;
+    width: 68%;
 }
 #carouselAd .carousel-inner {
     height: 100%;
@@ -375,33 +375,50 @@ section {
     flex-wrap: wrap; /* Allow the cards to wrap to the next line if the container is not wide enough */
     gap: 20px; /* Add space between the cards */
     margin-top: 20px;
+    height: 700px;
 }
+
+
+
 
 .services-card {
     border: 1px solid #ccc;
     border-radius: 10px;
     padding: 20px;
     width: 1700px;
-    height: 700px;
+    height: 600px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: left; /* Center the text within the cards */
+    background-color: #141436;
 }
 
 .services-card img {
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
     margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+
 }
 
 .services-card h3 {
     margin: 10px 0;
     font-size: 1.5em;
+    text-align: center;
+    color: #ccc;
+
 }
 
 .services-card p {
     line-height: 1.6;
     font-size: 1.8rem;
+    text-align: center;
+    color: #ccc;
+
 }
+
 .about {
     display: flex;
     align-items: center;
@@ -419,6 +436,7 @@ section {
 
 .about .content {
     flex: 1 1 40rem;
+   
 }
 
 .about .content h3 {
@@ -426,6 +444,8 @@ section {
     color: var(--black);
     font-family: 'Poppins', cursive;
     padding-bottom: 1rem;
+ 
+
 }
 
 .about .content p {
@@ -433,6 +453,7 @@ section {
     line-height: 2;
     color: var(--light-color);
     font-size: 1.8rem;
+    
 }
 .row{
     display: flex;
@@ -508,7 +529,7 @@ section {
 }
 
 #galleryCarousel .carousel-item {
-    height: 1000px; /* Set the desired height for your images */
+    height: 550px; /* Set the desired height for your images */
 }
 
 #galleryCarousel .carousel-image {
