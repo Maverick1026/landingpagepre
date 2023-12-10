@@ -307,8 +307,8 @@ section {
 }
  
 #carouselAd .carousel-item {
-    height: 100%;
-    width: 100%;
+    height: 1200px;
+    width: 1200px;
     text-align: center;
 }
 
@@ -324,8 +324,8 @@ section {
 }
 
 #carouselAd .carousel-inner .carousel-item {
-    width: 100%;
-    height: 100%;
+    height: 700px;
+    width: 1300px;
 }
 
 #carouselAd .carousel-inner .carousel-background img {
