@@ -259,7 +259,7 @@ section {
     position: relative;
     z-index: 1;
     margin-left: 20%; /* Adjust the left margin as needed */
-    margin-top: 20%;
+    margin-top: 40%;
 }
 .home-content-column {
     margin-right: 10rem; /* Adjust the margin as needed */
@@ -307,8 +307,8 @@ section {
 }
  
 #carouselAd .carousel-item {
-    height: 1200px;
-    width: 1200px;
+    height: 100%;
+    width: 100%;
     text-align: center;
 }
 
@@ -324,8 +324,8 @@ section {
 }
 
 #carouselAd .carousel-inner .carousel-item {
-    height: 700px;
-    width: 1300px;
+    width: 120%;
+    height: 120%;
 }
 
 #carouselAd .carousel-inner .carousel-background img {
@@ -393,9 +393,10 @@ section {
 }
 
 .services-card img {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 10px;
+    width: 25%;
+    height: 25%;
+    margin-bottom: 20px;
+    margin-top: 10px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -408,7 +409,7 @@ section {
     font-size: 1.5em;
     text-align: center;
     color: #ccc;
-
+    margin-bottom: 20px;
 }
 
 .services-card p {
@@ -416,6 +417,7 @@ section {
     font-size: 1.8rem;
     text-align: center;
     color: #ccc;
+    margin-bottom: 20px;
 
 }
 
@@ -487,6 +489,8 @@ section {
 
 .facility .box-container .box {
     text-align: center;
+    display: grid;
+    grid-template-rows: auto 1fr; /* Two rows, first for content, second for remaining space */
 }
 
 .facility .box-container .box img {
@@ -504,8 +508,8 @@ section {
     line-height: 2;
     font-size: 1.5rem;
     color: var(--light-color);
+    margin: 0; /* Remove default margin */
 }
-
 .menu .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, 30rem);
@@ -540,7 +544,7 @@ section {
 .gallery .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, 33rem);
-    gap: 1.5rem;
+    gap: 1.2rem;
     justify-content: center;
 }
 
@@ -550,7 +554,7 @@ section {
     object-fit: cover;
 }
 
-.blog .blog-content {
+/* .blog .blog-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
@@ -589,7 +593,7 @@ section {
 
 .blog .blog-post a.btn:hover {
     background-color: #0056b3;
-}
+} */
 
 .contact {
     margin-top: 30px; /* Adjust the margin as needed */
@@ -605,11 +609,22 @@ section {
     flex: 1 1 50rem;
 }
 
+.contact .box-container{
+    margin-top: 60px;
+}
 .contact .row .image img {
     width: 100%;
 }
+.contact .container h3 {
+    margin-top: 60px;
+    font-size: 1.8em;
+}
 
-.contact .row form {
+.contact .content p {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+/* .contact .row form {
     flex: 1 1 30rem;
     border: var(--border);
     padding: 2rem;
@@ -629,7 +644,7 @@ section {
     color: var(--black);
     border: var(--border);
     margin: 1rem 0;
-}
+} */
 .footer {
     margin-top: -110px; /* Adjust the margin as needed */
 }
@@ -663,11 +678,11 @@ section {
 }
 
 h3 {
-    margin-top: 0;
+    margin-top: 10px;
 }
 
 p {
-    margin: 5px 0;
+    margin-top: 10px;
 }
 
 .opening-hours {
@@ -676,23 +691,101 @@ p {
 }
 
 @media (max-width: 1440px) {
-    .home-bg .home {
-        flex-direction: column;
-        align-items: center;
-        margin-top: 5rem;
+    #home {
+        scroll-margin-top: 60px; /* Adjust the value as needed */
     }
-
+    
+    #menu {
+        scroll-margin-top: 60px; /* Adjust the value as needed */
+    }
+    
+    #services {
+        scroll-margin-top: 40px; /* Adjust the value as needed */
+    }
+    
+    #gallery {
+        scroll-margin-top: 70px; /* Adjust the value as needed */
+    }
+    
+    #about {
+        scroll-margin-top: 70px; /* Adjust the value as needed */
+    }
+    
+    #contact {
+        scroll-margin-top: 50px; /* Adjust the value as needed */
+    }
+    
+    .home-bg {
+        min-height: calc(90rem - var(--header-height));
+        background: linear-gradient(100deg, var(--white), transparent 170%),url(../img/home-bg.png) no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 2rem;
+        padding-bottom: 0;
+        margin-top: 8rem;
+    }
+    .home-bg .home {
+        min-height: 58rem;
+        display: flex;
+        align-items: center;
+    }
+    .home .content {
+        width: 100%;
+        text-align: left;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+        z-index: 1;
+        margin-left: 20%; /* Adjust the left margin as needed */
+        margin-top: 20%;
+    }
+    .home-content-column {
+        margin-right: 10rem; /* Adjust the margin as needed */
+    }
     .home-bg .home .content {
-        margin-top: 35rem;
+        margin-top: 15rem;
         width: 100%;
         text-align: center;
     }
+    .summer-text {
+        color: #fe9001;
+        font-family: 'Poppins', cursive;
+    }
+    
+    .home .content h3 {
+        font-size: 5rem;
+        color: var(--black);
+        font-family: 'Poppins', cursive;
+        white-space: nowrap;
+        margin-top: 0;
+    }
+    
+    .home .content p {
+        padding: 1rem 0;
+        text-align: left;
+        font-size: 1.8rem;
+        color: var(--black);
+        line-height: 2;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
 
     #carouselAd {
-        margin-top: 15rem;
-        margin-left: 0;
-        width: 100%;
-    }
+    position: relative;
+    height: 90vh;
+    width: 100%; /* Adjusted width for responsiveness */
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: -45%;
+    margin-left: 55%;
+}
+
+#carouselAd .carousel-inner .carousel-item {
+    width: 100%;
+    height: 100%;
+}
 
     .navbar-nav {
         text-align: center;
@@ -710,17 +803,6 @@ p {
 
     .navbar-toggler {
         padding: 10px;
-    }
-
-    .dropdown-menu {
-        text-align: center;
-    }
-
-    .dropdown-menu a {
-        font-size: 2rem;
-        color: #FFF2E4;
-        display: block;
-        padding: 0.5rem;
     }
 
     .header .navbar .flex {
@@ -859,6 +941,7 @@ p {
 
     .navbar-nav {
         text-align: center;
+        margin-right: 0;
     }
 
     .header .navbar-brand img {
@@ -947,6 +1030,7 @@ p {
     .about .content {
         text-align: center;
     }
+
     .footer .box-container {
         grid-template-columns: 1fr; /* Change to a single column layout */
         justify-content: center; /* Center the items horizontally */
@@ -963,7 +1047,6 @@ p {
         margin-top: 20px; /* Add space between the cards and the social media icons */
     }
 }
-
 @media (max-width: 450px) {
     html {
         font-size: 50%;
