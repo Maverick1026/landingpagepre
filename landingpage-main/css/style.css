@@ -329,8 +329,8 @@ section {
 }
 
 #carouselAd .carousel-inner .carousel-background img {
-    width: 100%;
-    height: 100%;
+    width: 1160px;
+    height: 580px;
     object-fit: cover;
 }
 .carousel-inner {
@@ -340,10 +340,10 @@ section {
     margin-right: 1rem;
 }
 
-.best-seller {
-    /* Add a top margin to create space between "Best Seller" and "Home" */
-    margin-top: -40px; /* Adjust the margin-top as needed, possibly a negative value */
-    padding-top: 3rem; /* Remove top padding */
+/* .best-seller {
+    Add a top margin to create space between "Best Seller" and "Home"
+    margin-top: -40px; Adjust the margin-top as needed, possibly a negative value
+    padding-top: 3rem; Remove top padding
 }
 
 .best-seller-item {
@@ -354,7 +354,7 @@ section {
 }
 
 .best-seller-item img {
-    max-width: 50%; /* Adjust the size as needed */
+    max-width: 50%; Adjust the size as needed
 }
 
 .best-seller-item .content {
@@ -363,12 +363,12 @@ section {
 }
 
 .best-seller-item .content h3 {
-    font-size: 3rem; /* Adjust the font size as needed */
+    font-size: 3rem; Adjust the font size as needed
 }
 
 .best-seller-item .content p {
-    font-size: 1.8rem; /* Adjust the font size as needed */
-}
+    font-size: 1.8rem; Adjust the font size as needed
+} */
 .services-card-container {
     display: flex;
     justify-content: center; /* Center the cards horizontally */
@@ -385,8 +385,8 @@ section {
     border: 1px solid #ccc;
     border-radius: 10px;
     padding: 20px;
-    width: 1700px;
-    height: 600px;
+    width: 1160px;
+    height: 580px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: left; /* Center the text within the cards */
     background-color: #141436;
@@ -469,6 +469,7 @@ section {
     margin-bottom: 20rem;
     flex: 1; /* Takes up remaining space */
     margin-right: 20px; /* Adjust margin as needed */
+    margin-top: -80px;
 }
 .row .box-container{
     flex: 1; /* Takes up remaining space */
@@ -544,7 +545,7 @@ section {
 .gallery .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, 33rem);
-    gap: 1.2rem;
+    gap: 1.5rem;
     justify-content: center;
 }
 
@@ -610,13 +611,13 @@ section {
 }
 
 .contact .box-container{
-    margin-top: 60px;
+    margin-top: 20px;
 }
 .contact .row .image img {
     width: 100%;
 }
 .contact .container h3 {
-    margin-top: 60px;
+    margin-top: 40px;
     font-size: 1.8em;
 }
 
@@ -646,26 +647,33 @@ section {
     margin: 1rem 0;
 } */
 .footer {
-    margin-top: -110px; /* Adjust the margin as needed */
+    display: grid;
+    grid-template-columns: 2fr; /* Use a single column */
+    gap: 1.5rem;
+    align-items: center; /* Center items vertically */
 }
 
-.footer .box-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
-    gap: 1.5rem;
-    align-items: flex-start;
+.footer .box {
+    text-align: center;
 }
 
 .footer .credit {
     text-align: center;
-    margin-top: 3rem;
-    padding-top: 1.5rem;
-    border-top: var(--border);
     font-size: 2rem;
+    border-top: var(--border);
+    padding-top: 1.5rem;
 }
 
 .footer .credit span {
     color: var(--main-color);
+}
+
+.footer .box h3 {
+    margin-bottom: 0.5rem;
+}
+
+.footer .box a {
+    margin: 0 0.5rem;
 }
 
 .card {
