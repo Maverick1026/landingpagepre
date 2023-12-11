@@ -647,6 +647,7 @@ section {
     margin: 1rem 0;
 } */
 .footer {
+    
     display: grid;
     grid-template-columns: 2fr; /* Use a single column */
     gap: 1.5rem;
@@ -662,6 +663,8 @@ section {
     font-size: 2rem;
     border-top: var(--border);
     padding-top: 1.5rem;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .footer .credit span {
